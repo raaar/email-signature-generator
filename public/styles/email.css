@@ -12,5 +12,14 @@
 }
 
 .card-name {
-    padding-left: 10px;
+    padding-left: 15px;
+}
+
+.info-row {
+    padding-top: 10px;
+}
+
+.social-row {
+    padding-top: 10px;
+    padding-bottom: 5px;
 }
