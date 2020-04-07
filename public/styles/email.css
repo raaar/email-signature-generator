@@ -1,0 +1,16 @@
+.promo-image-cell {
+    padding-top: 10px;
+    vertical-align: top;
+}
+
+.promo-image-cell-first {
+    width: 1%;
+}
+
+.promo-image-cell-second {
+    padding-left: 10px;
+}
+
+.card-name {
+    padding-left: 10px;
+}
