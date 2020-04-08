@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack && node ./tasks/juice.js",
-    "watch": "webpack --progress --watch"
+    "build": "webpack && node ./tasks/juice.js && npm run compress",
+    "watch": "webpack --progress --watch",
+    "compress": "sh ./tasks/zip.sh"
   },
   "author": "",
   "license": "ISC",

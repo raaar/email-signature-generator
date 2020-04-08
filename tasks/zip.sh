@@ -1,0 +1,1 @@
+zip -r public/dest/compressed.zip public
