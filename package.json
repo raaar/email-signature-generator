@@ -5,12 +5,19 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "node ./tasks/juice.js"
+    "build": "webpack && node ./tasks/juice.js",
+    "watch": "webpack --progress --watch"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^8.2.0",
     "html-minifier": "^4.0.0",
-    "juice": "^6.0.0"
+    "html-webpack-plugin": "^4.0.4",
+    "juice": "^6.0.0",
+    "webpack": "^4.42.1"
+  },
+  "devDependencies": {
+    "webpack-cli": "^3.3.11"
   }
 }

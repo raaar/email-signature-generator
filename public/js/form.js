@@ -36,13 +36,7 @@ class Form extends HTMLElement {
                 <input id="linkdin" type="text" name="" value="" class="form-control js-input-link" data-bind="bind-linkedin">
             </div>
 
-            <div class="form-group">
-                <label for="twitter">Twitter</label>
-                <input id="twitterstar" type="text" name="" value="" class="form-control js-input-link" data-bind="bind-twitter">
-            </div>
-
             <button class="btn btn-primary mb-3">Generate</button>
-
         </form>
         `
     }
@@ -103,14 +97,7 @@ class Form extends HTMLElement {
         const inputVal = e.target.value;
         const signatureTarget = e.currentTarget.dataset['bind'];
 
-        console.log('emai;', inputVal)
         document.querySelector(`.${signatureTarget}`).setAttribute('href', inputVal);    
-
-        // $('.js-input-mail-link').keyup(function() {
-        //     var inputVal = $(this).val();
-        //     root.find('.' + $(this).data().bind).attr('href', 'mailto:' + inputVal);
-        //     copyPaster();
-        // });
     }
 
     _onSubmit(e) {
@@ -119,4 +106,5 @@ class Form extends HTMLElement {
         document.querySelector('.js-code').innerHTML = html;
     }
 }
+
 customElements.define('email-form',Form);

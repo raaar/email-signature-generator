@@ -1,3 +1,23 @@
+.font-family {
+    font-family: "Lucida Bright", Georgia, serif;
+}
+
+.link {
+    color: #000;
+    text-decoration: none; 
+    font-weight: normal; 
+}
+
+.email-p {
+    font-size: 14px;
+}
+
+.email-h {
+    letter-spacing: 1.5px;
+    color: #000000; 
+    font-size: 18px;
+}
+
 .promo-image-cell {
     padding-top: 10px;
     vertical-align: top;

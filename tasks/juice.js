@@ -12,8 +12,8 @@ const juiceOptions = { extraCss: cssContents };
 
 try {
 
-    const src = `./public/templates/signature-dev.html`;
-    const dest = `./public/dest/signature-prod.html`;
+    const src = `./public/dest/index.html`;
+    const dest = `./public/dest/index.html`;
     const destDir = path.dirname(dest);
     const fileContents = fs.readFileSync(src, 'utf-8');
 
