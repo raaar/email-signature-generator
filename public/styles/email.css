@@ -31,8 +31,17 @@
     padding-left: 10px;
 }
 
-.card-name {
-    padding-left: 15px;
+
+.pt-15 {
+    padding-top: 15px;
+}
+
+.pl-15 {
+    padding-left: 15px
+}
+
+.pl-20 {
+    padding-left: 20px
 }
 
 .info-row {
@@ -40,6 +49,6 @@
 }
 
 .social-row {
-    padding-top: 10px;
+    padding-top: 15px;
     padding-bottom: 5px;
 }
