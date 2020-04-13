@@ -1,101 +1,96 @@
 <html>
-    <head>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <head>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-        
-        <link rel="stylesheet" href="../styles/email.css">
-    </head>
-    <body>
-        
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+      
+      <link rel="stylesheet" href="../styles/email.css">
+  </head>
+  <body>
+      
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
 
-                    <email-form></email-form>
+          <email-form></email-form>
 
-                    <div class="js-form-root">
-                        <table cellpadding="0" cellspacing="0" border="0" style="background: none; border-width: 0px; border: 0px; margin: 0; padding: 0;">
+          <div class="js-form-root">
+            <table cellpadding="0" cellspacing="0" border="0" style="background: none; border-width: 0px; border: 0px; margin: 0; padding: 0;">
+                <tr>
+                    <td valign="top" width="<%= htmlWebpackPlugin.options.env.LOGO_WIDTH %>">
+                        <table width="<%= htmlWebpackPlugin.options.env.LOGO_WIDTH %>" border="0" cellspacing="0" cellpadding="0">
                             <tr>
-                                <td valign="top" width="<%= htmlWebpackPlugin.options.env.LOGO_WIDTH %>">
-                                    <table width="<%= htmlWebpackPlugin.options.env.LOGO_WIDTH %>" border="0" cellspacing="0" cellpadding="0">
-                                        <tr>
-                                            <td valign="top" class="font-family" colspan="2"><img alt="<%= htmlWebpackPlugin.options.env.BUSINESS %>" src="<%= htmlWebpackPlugin.options.env.LOGO_URL %>" width="<%= htmlWebpackPlugin.options.env.LOGO_WIDTH %>" height="<%= htmlWebpackPlugin.options.env.LOGO_HEIGHT %>" style="color: #ffffff; font-size: 20px; display: block; border: 0px;" border="0"></td>
-                                        </tr>
-                                    </table>
-                                </td>
-
-                                <td class="pl-20" width="100%">
-
-                                    <table cellpadding="0" cellspacing="0" border="0" style="background: none; border-width: 0px; border: 0px; margin: 0; padding: 0;">
-                                        
-                                        <tr>
-                                            <td>
-                                                <div class="bind-name font-family email-h" style="padding-bottom: 5px;"">Name</div>
-                                            </td>
-                                        </tr>
-
-                                        <tr>
-                                            <td>
-                                                <div class="font-family bind-role email-p" style="font-style: italic;"><i>Role</i></div>
-                                            </td>
-                                        </tr>
-
-                                        <tr>
-                                            <td class="font-family info-row">
-                                                <img width="25" height="25" style="border: none; width: 25px; max-width: 25px !important; height: 25px; max-height: 25px !important;" src="<%= htmlWebpackPlugin.options.env.PHONE_ICON %>" />
-                                                <span class="font-family bind-mobile email-p">000</span>
-                                            </td>
-                                        </tr>
-            
-                                        <tr>
-                                            <td class="info-row font-family">
-                                                <div>
-                                                  <a class="font-family link email-p" href="mailto:<%= htmlWebpackPlugin.options.env.DEFAULT_EMAIL %>">
-                                                    <img width="25" height="25" style="border: none; width: 25px; max-width: 25px !important; height: 25px; max-height: 25px !important;" src="<%= htmlWebpackPlugin.options.env.EMAIL_ICON %>" />
-                                                  </a>
-                                                  <a class="bind-email font-family link email-p" href="mailto:<%= htmlWebpackPlugin.options.env.DEFAULT_EMAIL %>">
-                                                  <%= htmlWebpackPlugin.options.env.DEFAULT_EMAIL %></a>
-                                                </div>
-                                            </td>
-                                        </tr>
-            
-                                        <tr>
-                                            <td class="info-row font-family">
-                                                <div class="font-family email-p">
-                                                  <a class="link email-p"
-                                                  href="https://<%= htmlWebpackPlugin.options.env.DEFAULT_WEBSITE %>">
-                                                    <img width="25" height="25" style="border: none; width: 25px; max-width: 25px !important; height: 25px; max-height: 25px !important;" src="<%= htmlWebpackPlugin.options.env.LINK_ICON %>">
-                                                  </a>
-                                                    <a class="link email-p"
-                                                        href="https://<%= htmlWebpackPlugin.options.env.DEFAULT_WEBSITE %>">
-
-                                                        <%= htmlWebpackPlugin.options.env.DEFAULT_WEBSITE %></a></div>
-                                            </td>
-                                        </tr>
-            
-                                        <tr>
-                                            <td class="social-row" colspan="2">
-                                                <a class="bind-linkedin" href="<%= htmlWebpackPlugin.options.env.LINKEDIN_URL %>" style="border-width:0px; border:0px; text-decoration: none;"><img width="25" height="25" style="border: none; width: 25px; max-width: 25px !important; height: 25px; max-height: 25px !important;" src="<%= htmlWebpackPlugin.options.env.LINKEDIN_ICON %>"></a>&nbsp;&nbsp;
-                                                <a href="<%= htmlWebpackPlugin.options.env.INSTAGRAM_URL %>" style="border-width:0px; border:0px; text-decoration: none;"><img width="25" height="25" style="border: none; width: 25px; max-width: 25px !important; height: 25px; max-height: 25px !important;" src="<%= htmlWebpackPlugin.options.env.INSTAGRAM_ICON %>"></a>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </td>
+                                <td valign="top" class="font-family" colspan="2"><img alt="<%= htmlWebpackPlugin.options.env.BUSINESS %>" src="<%= htmlWebpackPlugin.options.env.LOGO_URL %>" width="<%= htmlWebpackPlugin.options.env.LOGO_WIDTH %>" height="<%= htmlWebpackPlugin.options.env.LOGO_HEIGHT %>" style="color: #ffffff; font-size: 20px; display: block; border: 0px;" border="0"></td>
                             </tr>
                         </table>
+                    </td>
 
+                    <td class="pl-20" width="100%">
+                      <table cellpadding="0" cellspacing="0" border="0" style="background: none; border-width: 0px; border: 0px; margin: 0; padding: 0;">
+                          
+                        <tr>
+                          <td class="font-family email-h" style="padding-bottom: 5px;">
+                            <div class="bind-name">Name</div>
+                          </td>
+                        </tr>
 
-                    </div>
+                        <tr>
+                          <td>
+                            <div class="font-family bind-role email-p" style="font-style: italic;"><i>Role</i></div>
+                          </td>
+                        </tr>
 
-					<div class="form-group mt-5">
-                        <label for="comment">Code:</label>
-                        <textarea class="form-control js-code" rows="5" id="comment" readonly></textarea>
-                    </div>
+                        <tr>
+                          <td class="font-family info-row" valign="middle">
+                            <img width="25" height="25" style="border: none; width: 25px; max-width: 25px !important; height: 25px; max-height: 25px !important;" src="<%= htmlWebpackPlugin.options.env.PHONE_ICON %>" />
+                            <span class="font-family bind-mobile email-p">000</span>
+                          </td>
+                        </tr>
 
-                </div>
-            </div>
+                        <tr>
+                          <td class="info-row font-family" valign="middle">
+                            <a class="font-family link email-p" href="mailto:<%= htmlWebpackPlugin.options.env.DEFAULT_EMAIL %>">
+                                <img width="25" height="25" style="border: none; width: 25px; max-width: 25px !important; height: 25px; max-height: 25px !important;" src="<%= htmlWebpackPlugin.options.env.EMAIL_ICON %>" />
+                            </a>
+                            <a class="bind-email font-family link email-p" href="mailto:<%= htmlWebpackPlugin.options.env.DEFAULT_EMAIL %>">
+                                <%= htmlWebpackPlugin.options.env.DEFAULT_EMAIL %>
+                            </a>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td class="info-row font-family" valign="middle">
+                            <a class="link email-p"
+                                href="https://<%= htmlWebpackPlugin.options.env.DEFAULT_WEBSITE %>">
+                              <img width="25" height="25" style="border: none; width: 25px; max-width: 25px !important; height: 25px; max-height: 25px !important;" src="<%= htmlWebpackPlugin.options.env.LINK_ICON %>">
+                            </a>
+                            <a class="link email-p" href="https://<%= htmlWebpackPlugin.options.env.DEFAULT_WEBSITE %>">
+                              <%= htmlWebpackPlugin.options.env.DEFAULT_WEBSITE %>
+                            </a>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td class="social-row" colspan="2">
+                              <a class="bind-linkedin" href="<%= htmlWebpackPlugin.options.env.LINKEDIN_URL %>" style="border-width:0px; border:0px; text-decoration: none;"><img width="25" height="25" style="border: none; width: 25px; max-width: 25px !important; height: 25px; max-height: 25px !important;" src="<%= htmlWebpackPlugin.options.env.LINKEDIN_ICON %>"></a>
+                              &nbsp;&nbsp;
+                              <a href="<%= htmlWebpackPlugin.options.env.INSTAGRAM_URL %>" style="border-width:0px; border:0px; text-decoration: none;"><img width="25" height="25" style="border: none; width: 25px; max-width: 25px !important; height: 25px; max-height: 25px !important;" src="<%= htmlWebpackPlugin.options.env.INSTAGRAM_ICON %>"></a>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                </tr>
+            </table>
+          </div>
+
+          <div class="form-group mt-5">
+            <label for="comment">Code:</label>
+            <textarea class="form-control js-code" rows="5" id="comment" readonly></textarea>
+          </div>
+
         </div>
+      </div>
+    </div>
 
-    </body>
+  </body>
 </html>
