@@ -15,7 +15,7 @@
           <email-form></email-form>
 
           <div class="js-form-root">
-            <table cellpadding="0" cellspacing="0" border="0" style="background: none; border-width: 0px; border: 0px; margin: 0; padding: 0;">
+            <table class="table-reset" cellpadding="0" cellspacing="0" border="0">
                 <tr>
                     <td valign="top" width="<%= htmlWebpackPlugin.options.env.LOGO_WIDTH %>">
                         <table width="<%= htmlWebpackPlugin.options.env.LOGO_WIDTH %>" border="0" cellspacing="0" cellpadding="0">
@@ -26,7 +26,7 @@
                     </td>
 
                     <td class="pl-20" width="100%">
-                      <table cellpadding="0" cellspacing="0" border="0" style="background: none; border-width: 0px; border: 0px; margin: 0; padding: 0;">
+                      <table class="table-reset" cellpadding="0" cellspacing="0" border="0">
                           
                         <tr>
                           <td class="font-family email-h" style="padding-bottom: 5px;">
@@ -41,32 +41,56 @@
                         </tr>
 
                         <tr>
-                          <td class="font-family info-row" valign="middle">
-                            <img width="25" height="25" style="border: none; width: 25px; max-width: 25px !important; height: 25px; max-height: 25px !important;" src="<%= htmlWebpackPlugin.options.env.PHONE_ICON %>" />
-                            <span class="font-family bind-mobile email-p">000</span>
+                          <td class="info-row">
+                            <table class="table-reset" cellpadding="0" cellspacing="0" border="0">
+                              <tr>
+                                <td width="25" class="v-align" valign="middle">
+                                  <img width="25" height="25" class="icon-sm" src="<%= htmlWebpackPlugin.options.env.PHONE_ICON %>" />
+                                </td>
+                                <td class="pl-5px v-align" valign="middle">
+                                  <span class="font-family bind-mobile email-p">000</span>
+                                </td>
+                              </tr>
+                            </table>
                           </td>
                         </tr>
 
+
+
                         <tr>
-                          <td class="info-row font-family" valign="middle">
-                            <a class="font-family link email-p" href="mailto:<%= htmlWebpackPlugin.options.env.DEFAULT_EMAIL %>">
-                                <img width="25" height="25" style="border: none; width: 25px; max-width: 25px !important; height: 25px; max-height: 25px !important;" src="<%= htmlWebpackPlugin.options.env.EMAIL_ICON %>" />
-                            </a>
-                            <a class="bind-email font-family link email-p" href="mailto:<%= htmlWebpackPlugin.options.env.DEFAULT_EMAIL %>">
-                                <%= htmlWebpackPlugin.options.env.DEFAULT_EMAIL %>
-                            </a>
+                          <td class="info-row">
+                            <table class="table-reset" cellpadding="0" cellspacing="0" border="0">
+                              <tr>
+                                <td width="25" class="v-align" valign="middle">
+                                  <img width="25" height="25" class="icon-sm" src="<%= htmlWebpackPlugin.options.env.EMAIL_ICON %>" />
+                                </td>
+                                <td class="pl-5px v-align" valign="middle">
+                                  <a class="bind-email font-family link email-p" href="mailto:<%= htmlWebpackPlugin.options.env.DEFAULT_EMAIL %>">
+                                    <%= htmlWebpackPlugin.options.env.DEFAULT_EMAIL %>
+                                  </a>
+                                </td>
+                              </tr>
+                            </table>
                           </td>
                         </tr>
 
+
+
                         <tr>
-                          <td class="info-row font-family" valign="middle">
-                            <a class="link email-p"
-                                href="https://<%= htmlWebpackPlugin.options.env.DEFAULT_WEBSITE %>">
-                              <img width="25" height="25" style="border: none; width: 25px; max-width: 25px !important; height: 25px; max-height: 25px !important;" src="<%= htmlWebpackPlugin.options.env.LINK_ICON %>">
-                            </a>
-                            <a class="link email-p" href="https://<%= htmlWebpackPlugin.options.env.DEFAULT_WEBSITE %>">
-                              <%= htmlWebpackPlugin.options.env.DEFAULT_WEBSITE %>
-                            </a>
+                          <td class="info-row">
+                            <table class="table-reset" cellpadding="0" cellspacing="0" border="0">
+                              <tr>
+                                <td width="25" class="v-align" valign="middle">
+                                  <img width="25" height="25" class="icon-sm" src="<%= htmlWebpackPlugin.options.env.LINK_ICON %>" />
+                                </td>
+                                <td class="pl-5px v-align" valign="middle">
+                                  
+                                  <a class="bind-email font-family link email-p" href="<%= htmlWebpackPlugin.options.env.DEFAULT_WEBSITE %>">
+                                    <%= htmlWebpackPlugin.options.env.DEFAULT_WEBSITE %>
+                                  </a>
+                                </td>
+                              </tr>
+                            </table>
                           </td>
                         </tr>
 
