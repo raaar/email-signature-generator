@@ -97,7 +97,7 @@ class Form extends HTMLElement {
         const inputVal = e.target.value;
         const signatureTarget = e.currentTarget.dataset['bind'];
 
-        document.querySelector(`.${signatureTarget}`).setAttribute('href', inputVal);    
+        document.querySelector(`.${signatureTarget}`).setAttribute('href', `mailto:${inputVal}`);    
     }
 
     _onSubmit(e) {
